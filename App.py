@@ -3,27 +3,18 @@ import pandas as pd
 import numpy as np
 
 
-st.title("My first app")
-st.write("Hello World") 
+st.title("Assignment Week 6")
 
-df = pd.DataFrame(
-    np.random.randn(10, 2),
-    columns=("col1", "col2")
-)
+#product category
+product_c = st.text_input("Product Category")
+#customer location
+customer_loc = st.text_input("Customer Location")
+#shipping method 
+shipping_method = st.text_input("Shipping Method")
+#prediction of delivery time
 
-st.write(df)
+if st.button("Predict"):
+    st.write("The predicted delivery time is 5 days.")
 
-st.write("Below is a dataframe with a button")
 
-if st.button("Say hello"):
-    st.write("Hello!")      
-    
-st.write("Below is a dataframe with a checkbox")
-
-if st.checkbox("Show dataframe"):
-    chart_data = pd.DataFrame(
-        np.random.randn(20, 3),
-        columns=["a", "b", "c"]
-    )
-    st.write(chart_data)
 
