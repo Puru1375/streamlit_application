@@ -8,7 +8,9 @@ st.title("Assignment Week 6")
 #product category
 product_c = st.text_input("Product Category")
 #customer location
-customer_loc = st.text_input("Customer Location")
+customer_country = st.text_input("Country")
+customer_state = st.text_input("State")
+customer_city = st.text_input("City")
 #shipping method 
 shipping_method = st.text_input("Shipping Method")
 #prediction of delivery time
